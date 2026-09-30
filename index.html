@@ -1356,7 +1356,6 @@ function closeMobileMenu(){
 function toggleTheme(){
   document.documentElement.classList.toggle('dark');
   const isDark=document.documentElement.classList.contains('dark');
-  localStorage.setItem('theme',isDark?'dark':'light');
   updateThemeIcon(isDark);
 }
 function updateThemeIcon(isDark){
@@ -1432,8 +1431,9 @@ renderToc();
 window.addEventListener('scroll',onScroll,{passive:true});
 onScroll();
 initScrollSpy();
-// Theme init
-try{const t=localStorage.getItem('theme');const m=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&m)){document.documentElement.classList.add('dark');updateThemeIcon(true)}}catch(e){}
+// Start each visit in light mode; the toggle changes the current visit.
+document.documentElement.classList.remove('dark');
+updateThemeIcon(false);
 </script>
 </body>
 </html>
