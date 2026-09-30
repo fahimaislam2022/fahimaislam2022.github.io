@@ -195,11 +195,7 @@ main{flex:1}
 .dark .section-alt{background:linear-gradient(to bottom,rgba(30,41,59,.3),var(--bg))}
 .section-head{max-width:42rem;margin-bottom:2.5rem}
 .section-head.center{margin-left:auto;margin-right:auto;text-align:center}
-.section-index{font-size:.75rem;font-weight:700;color:rgba(29,78,216,.6);font-variant-numeric:tabular-nums}
-.dark .section-index{color:rgba(96,165,250,.6)}
-.section-eyebrow{display:inline-block;border-radius:9999px;background:rgba(29,78,216,.1);padding:.25rem .75rem;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--primary)}
-.dark .section-eyebrow{background:rgba(59,130,246,.15);color:var(--blue-400)}
-.section-title{position:relative;display:inline-block;margin-top:.75rem;font-size:1.5rem;font-weight:700;letter-spacing:-.02em;color:var(--fg)}
+.section-title{position:relative;display:inline-block;font-size:1.5rem;font-weight:700;letter-spacing:-.02em;color:var(--fg)}
 @media(min-width:640px){.section-title{font-size:1.875rem}}
 .section-title::after{content:"";position:absolute;left:0;bottom:-.45rem;height:3px;width:2.75rem;border-radius:9999px;background:linear-gradient(90deg,var(--blue-700),var(--blue-400))}
 .section-head.center .section-title::after{left:50%;transform:translateX(-50%)}
@@ -520,7 +516,6 @@ main{flex:1}
 
 /* ==================== LIGHT THEME READABILITY ==================== */
 :root:not(.dark) .text-gradient{background:none;-webkit-background-clip:initial;background-clip:initial;-webkit-text-fill-color:#000000;color:#000000}
-:root:not(.dark) .section-index{color:var(--primary)}
 :root:not(.dark) .about-summary p,
 :root:not(.dark) .research-points li,
 :root:not(.dark) .pub-contrib-list li,
@@ -701,8 +696,6 @@ main{flex:1}
 <!-- ABOUT -->
 <section class="section" id="about">
   <div class="section-head">
-    <span class="section-index">[01]</span>
-    <span class="section-eyebrow">About</span>
     <h2 class="section-title">Academic Profile</h2>
     <p class="section-desc">A short introduction to my background, focus areas, and research direction.</p>
   </div>
@@ -748,8 +741,6 @@ main{flex:1}
 <!-- RESEARCH -->
 <section class="section section-alt" id="research">
   <div class="section-head">
-    <span class="section-index">[02]</span>
-    <span class="section-eyebrow">Research</span>
     <h2 class="section-title">Research Experience</h2>
     <p class="section-desc">Applied research on dataset integrity, multimodal fusion, and trustworthy medical AI.</p>
   </div>
@@ -759,8 +750,6 @@ main{flex:1}
 <!-- EDUCATION -->
 <section class="section" id="education">
   <div class="section-head">
-    <span class="section-index">[03]</span>
-    <span class="section-eyebrow">Education</span>
     <h2 class="section-title">Academic Background</h2>
     <p class="section-desc">Undergraduate studies in Computer Science & Engineering with an Information Systems major.</p>
   </div>
@@ -773,8 +762,6 @@ main{flex:1}
 <!-- PUBLICATIONS -->
 <section class="section section-alt" id="publications">
   <div class="section-head">
-    <span class="section-index">[04]</span>
-    <span class="section-eyebrow">Publications</span>
     <h2 class="section-title">Research Manuscripts</h2>
     <p class="section-desc">Six accepted conference papers and eight manuscripts currently under review across healthcare AI, medical imaging, and LLM reliability.</p>
   </div>
@@ -806,8 +793,6 @@ main{flex:1}
 <!-- REPOSITORIES -->
 <section class="section" id="repositories">
   <div class="section-head">
-    <span class="section-index">[05]</span>
-    <span class="section-eyebrow">Open Source</span>
     <h2 class="section-title">GitHub Repositories</h2>
     <p class="section-desc">A selection of public repositories spanning medical AI, machine learning, data science, and full-stack development.</p>
   </div>
@@ -831,8 +816,6 @@ main{flex:1}
 <!-- SKILLS -->
 <section class="section section-alt" id="skills">
   <div class="section-head">
-    <span class="section-index">[06]</span>
-    <span class="section-eyebrow">Skills</span>
     <h2 class="section-title">Technical Skills</h2>
     <p class="section-desc">Languages, frameworks, research methods, and deployment tooling used across projects and publications.</p>
   </div>
@@ -842,8 +825,6 @@ main{flex:1}
 <!-- PROJECTS -->
 <section class="section" id="projects">
   <div class="section-head">
-    <span class="section-index">[07]</span>
-    <span class="section-eyebrow">Projects</span>
     <h2 class="section-title">Selected Projects</h2>
     <p class="section-desc">Research-driven implementations and applied engineering projects with public source code.</p>
   </div>
@@ -853,8 +834,6 @@ main{flex:1}
 <!-- LEADERSHIP -->
 <section class="section section-alt" id="leadership">
   <div class="section-head">
-    <span class="section-index">[08]</span>
-    <span class="section-eyebrow">Leadership</span>
     <h2 class="section-title">Leadership & Service</h2>
     <p class="section-desc">Organizing workshops, industry visits, and community initiatives through student clubs and national organizations.</p>
   </div>
@@ -864,8 +843,6 @@ main{flex:1}
 <!-- AWARDS -->
 <section class="section" id="awards">
   <div class="section-head">
-    <span class="section-index">[09]</span>
-    <span class="section-eyebrow">Recognition</span>
     <h2 class="section-title">Honors, Awards & Certifications</h2>
     <p class="section-desc">Academic distinctions, conference presentation recognition, competition certificates, and professional training.</p>
   </div>
@@ -917,8 +894,6 @@ main{flex:1}
 <!-- CONTACT -->
 <section class="section" id="contact">
   <div class="section-head center">
-    <span class="section-index">[10]</span>
-    <span class="section-eyebrow">Contact</span>
     <h2 class="section-title">Let's Connect</h2>
     <p class="section-desc">Open to PhD opportunities, research collaborations, and discussions on trustworthy healthcare AI.</p>
   </div>
