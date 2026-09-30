@@ -27,9 +27,9 @@
   --slate-50:#f8fafc;--slate-100:#f1f5f9;--slate-200:#e2e8f0;--slate-300:#cbd5e1;
   --slate-400:#94a3b8;--slate-500:#64748b;--slate-600:#475569;--slate-700:#334155;
   --slate-800:#1e293b;--slate-900:#0f172a;
-  --bg:#ffffff;--fg:#0f172a;--card:#ffffff;--muted:#f1f5f9;--muted-fg:#64748b;
+  --bg:#ffffff;--fg:#1e293b;--card:#ffffff;--muted:#f1f5f9;--muted-fg:#475569;
   --border:#e2e8f0;--primary:#1d4ed8;--primary-fg:#ffffff;--accent:#dbeafe;
-  --amber:#d97706;--amber-bg:#fef3c7;
+  --amber:#92400e;--amber-bg:#fef3c7;
   --radius:0.625rem;--maxw:80rem;
   --font-sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   --font-mono:"SF Mono",Monaco,"Cascadia Code","Roboto Mono",monospace;
@@ -517,6 +517,23 @@ main{flex:1}
 .cmdk-item-hint{font-size:.75rem;color:var(--muted-fg);display:none}
 @media(min-width:640px){.cmdk-item-hint{display:inline}}
 .cmdk-divider{height:1px;background:var(--border);margin:.25rem 0}
+
+/* ==================== LIGHT THEME READABILITY ==================== */
+:root:not(.dark) .text-gradient{background-image:linear-gradient(120deg,var(--blue-800),var(--blue-700) 55%,var(--blue-600))}
+:root:not(.dark) .section-index{color:var(--primary)}
+:root:not(.dark) .about-summary p,
+:root:not(.dark) .research-points li,
+:root:not(.dark) .pub-contrib-list li,
+:root:not(.dark) .award-conf-detail{color:var(--slate-700);opacity:1}
+:root:not(.dark) .edu-extra-items span,
+:root:not(.dark) .skill-chip,
+:root:not(.dark) .footer-built,
+:root:not(.dark) .toc-link,
+:root:not(.dark) .toc-num{opacity:1}
+:root:not(.dark) .pub-search::placeholder,
+:root:not(.dark) .repo-search::placeholder{color:var(--muted-fg);opacity:1}
+:root:not(.dark) .contact-banner{background-image:linear-gradient(to right,var(--blue-700),var(--blue-600))}
+:root:not(.dark) .contact-banner p{opacity:1}
 
 /* ==================== UTILITIES ==================== */
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
