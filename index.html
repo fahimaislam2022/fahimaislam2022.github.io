@@ -27,7 +27,7 @@
   --slate-50:#f8fafc;--slate-100:#f1f5f9;--slate-200:#e2e8f0;--slate-300:#cbd5e1;
   --slate-400:#94a3b8;--slate-500:#64748b;--slate-600:#475569;--slate-700:#334155;
   --slate-800:#1e293b;--slate-900:#0f172a;
-  --bg:#ffffff;--fg:#1e293b;--card:#ffffff;--muted:#f1f5f9;--muted-fg:#475569;
+  --bg:#ffffff;--fg:#000000;--card:#ffffff;--muted:#f1f5f9;--muted-fg:#000000;
   --border:#e2e8f0;--primary:#1d4ed8;--primary-fg:#ffffff;--accent:#dbeafe;
   --amber:#92400e;--amber-bg:#fef3c7;
   --radius:0.625rem;--maxw:80rem;
@@ -519,12 +519,12 @@ main{flex:1}
 .cmdk-divider{height:1px;background:var(--border);margin:.25rem 0}
 
 /* ==================== LIGHT THEME READABILITY ==================== */
-:root:not(.dark) .text-gradient{background-image:linear-gradient(120deg,var(--blue-800),var(--blue-700) 55%,var(--blue-600))}
+:root:not(.dark) .text-gradient{background:none;-webkit-background-clip:initial;background-clip:initial;-webkit-text-fill-color:#000000;color:#000000}
 :root:not(.dark) .section-index{color:var(--primary)}
 :root:not(.dark) .about-summary p,
 :root:not(.dark) .research-points li,
 :root:not(.dark) .pub-contrib-list li,
-:root:not(.dark) .award-conf-detail{color:var(--slate-700);opacity:1}
+:root:not(.dark) .award-conf-detail{color:var(--fg);opacity:1}
 :root:not(.dark) .edu-extra-items span,
 :root:not(.dark) .skill-chip,
 :root:not(.dark) .footer-built,
